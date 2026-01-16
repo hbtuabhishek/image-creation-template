@@ -1,0 +1,577 @@
+{
+    "templates": {
+        "1": {
+            "name": "Base Screen Overlay",
+            "canvas_size": [
+                460,
+                1024
+            ],
+            "background": "assets/backgrounds/English_device1.jpg",
+            "rectangles": [
+                {
+                    "pos": [
+                        15,
+                        75
+                    ],
+                    "size": [
+                        350,
+                        100
+                    ],
+                    "color": "#6e6e6e"
+                },
+                {
+                    "pos": [
+                        15,
+                        175
+                    ],
+                    "size": [
+                        430,
+                        350
+                    ],
+                    "radius": 20,
+                    "color": "#FFFFFF"
+                }
+            ],
+            "icons": {
+                "icon": {
+                    "pos": [
+                        34,
+                        200
+                    ],
+                    "size": [
+                        28,
+                        28
+                    ],
+                    "rounded": true
+                },
+                "bell_icon": {
+                    "pos": [
+                        0,
+                        208
+                    ],
+                    "size": [
+                        14,
+                        14
+                    ],
+                    "path": "assets/icons/bell-icon.png",
+                    "relative_to_x": "now_text",
+                    "spacing": 6,
+                    "align_y_to": "now_text"
+                },
+                "arrow_down": {
+                    "pos": [
+                        400,
+                        205
+                    ],
+                    "size": [
+                        30,
+                        30
+                    ],
+                    "path": "assets/icons/keyboard-arrow-up.webp"
+                }
+            },
+            "banners": {
+                "banner": {
+                    "pos": [
+                        78,
+                        282
+                    ],
+                    "size": [
+                        356,
+                        200
+                    ],
+                    "radius": 6
+                }
+            },
+            "texts": {
+                "display_clock": {
+                    "pos": [
+                        36,
+                        100
+                    ],
+                    "font_size": 50,
+                    "color": "#FFFFFF",
+                    "bold": false
+                },
+                "display_date": {
+                    "pos": [
+                        165,
+                        135
+                    ],
+                    "font_size": 16,
+                    "color": "#DDDDDD"
+                },
+                "app_name": {
+                    "pos": [
+                        78,
+                        205
+                    ],
+                    "font_size": 14,
+                    "color": "#555555"
+                },
+                "now_text": {
+                    "pos": [
+                        0,
+                        207
+                    ],
+                    "font_size": 12,
+                    "color": "#666666",
+                    "content": "\u2022 now",
+                    "relative_to_x": "app_name",
+                    "spacing": 8
+                },
+                "title": {
+                    "pos": [
+                        78,
+                        240
+                    ],
+                    "font_size": 16,
+                    "color": "#000000",
+                    "bold": true,
+                    "font_path": "assets/fonts/Arial.ttf"
+                },
+                "description": {
+                    "pos": [
+                        78,
+                        262
+                    ],
+                    "font_size": 16,
+                    "color": "#444444",
+                    "max_width": 350
+                }
+            }
+        },
+        "2": {
+            "name": "Notification Center",
+            "canvas_size": [
+                460,
+                1024
+            ],
+            "background": "assets/backgrounds/English_device2 (1).png",
+            "rectangles": [
+                {
+                    "pos": [
+                        25,
+                        15
+                    ],
+                    "size": [
+                        250,
+                        40
+                    ],
+                    "radius": 0,
+                    "color": "#d1d0d0"
+                },
+                {
+                    "pos": [
+                        20,
+                        270
+                    ],
+                    "size": [
+                        420,
+                        310
+                    ],
+                    "radius": 32,
+                    "color": "#e7e6e6"
+                }
+            ],
+            "icons": {
+                "icon": {
+                    "pos": [
+                        40,
+                        295
+                    ],
+                    "size": [
+                        24,
+                        24
+                    ],
+                    "rounded": true
+                },
+                "arrow_down": {
+                    "pos": [
+                        395,
+                        295
+                    ],
+                    "size": [
+                        30,
+                        30
+                    ],
+                    "path": "assets/icons/keyboard-arrow-up.webp"
+                }
+            },
+            "banners": {
+                "banner": {
+                    "pos": [
+                        78,
+                        370
+                    ],
+                    "size": [
+                        350,
+                        160
+                    ],
+                    "radius": 6
+                }
+            },
+            "texts": {
+                "display_clock": {
+                    "pos": [
+                        30,
+                        22
+                    ],
+                    "font_size": 18,
+                    "color": "#000000",
+                    "bold": true
+                },
+                "display_date": {
+                    "pos": [
+                        85,
+                        24
+                    ],
+                    "font_size": 16,
+                    "color": "#000000"
+                },
+                "app_name": {
+                    "pos": [
+                        78,
+                        298
+                    ],
+                    "font_size": 14,
+                    "color": "#333333"
+                },
+                "now_text": {
+                    "pos": [
+                        0,
+                        300
+                    ],
+                    "font_size": 12,
+                    "color": "#666666",
+                    "content": "\u2022 now",
+                    "relative_to_x": "app_name",
+                    "spacing": 8
+                },
+                "title": {
+                    "pos": [
+                        78,
+                        325
+                    ],
+                    "font_size": 16,
+                    "color": "#000000",
+                    "bold": true,
+                    "font_path": "assets/fonts/Arial.ttf"
+                },
+                "description": {
+                    "pos": [
+                        78,
+                        345
+                    ],
+                    "font_size": 14,
+                    "color": "#444444",
+                    "max_width": 380
+                }
+            }
+        },
+        "3": {
+            "name": "Notification Center",
+            "canvas_size": [
+                460,
+                1024
+            ],
+            "background": "assets/backgrounds/Hindi_device2 (1).png",
+            "rectangles": [
+                {
+                    "pos": [
+                        25,
+                        15
+                    ],
+                    "size": [
+                        150,
+                        40
+                    ],
+                    "radius": 12,
+                    "color": "#a8abaf"
+                },
+                {
+                    "pos": [
+                        20,
+                        270
+                    ],
+                    "size": [
+                        422,
+                        325
+                    ],
+                    "radius": 32,
+                    "color": "#dfe0e0"
+                }
+            ],
+            "icons": {
+                "icon": {
+                    "pos": [
+                        40,
+                        295
+                    ],
+                    "size": [
+                        24,
+                        24
+                    ],
+                    "rounded": true
+                },
+                "arrow_down": {
+                    "pos": [
+                        395,
+                        295
+                    ],
+                    "size": [
+                        30,
+                        30
+                    ],
+                    "path": "assets/icons/keyboard-arrow-up.webp"
+                }
+            },
+            "banners": {
+                "banner": {
+                    "pos": [
+                        78,
+                        370
+                    ],
+                    "size": [
+                        350,
+                        180
+                    ],
+                    "radius": 6
+                }
+            },
+            "texts": {
+                "display_clock": {
+                    "pos": [
+                        30,
+                        22
+                    ],
+                    "font_size": 18,
+                    "color": "#000000",
+                    "bold": true
+                },
+                "display_date": {
+                    "pos": [
+                        85,
+                        24
+                    ],
+                    "font_size": 16,
+                    "color": "#000000"
+                },
+                "app_name": {
+                    "pos": [
+                        78,
+                        298
+                    ],
+                    "font_size": 14,
+                    "color": "#333333"
+                },
+                "now_text": {
+                    "pos": [
+                        0,
+                        300
+                    ],
+                    "font_size": 12,
+                    "color": "#666666",
+                    "content": "\u2022 now",
+                    "relative_to_x": "app_name",
+                    "spacing": 8
+                },
+                "title": {
+                    "pos": [
+                        78,
+                        325
+                    ],
+                    "font_size": 16,
+                    "color": "#000000",
+                    "bold": true,
+                    "font_path": "assets/fonts/Arial.ttf"
+                },
+                "description": {
+                    "pos": [
+                        78,
+                        345
+                    ],
+                    "font_size": 14,
+                    "color": "#444444",
+                    "max_width": 380
+                }
+            }
+        },
+        "4": {
+            "name": "Base Screen Overlay",
+            "canvas_size": [
+                460,
+                1024
+            ],
+            "background": "assets/backgrounds/English_device1.jpg",
+            "rectangles": [
+                {
+                    "pos": [
+                        15,
+                        75
+                    ],
+                    "size": [
+                        350,
+                        100
+                    ],
+                    "color": "#6e6e6e"
+                },
+                {
+                    "pos": [
+                        15,
+                        175
+                    ],
+                    "size": [
+                        430,
+                        340
+                    ],
+                    "radius": 20,
+                    "color": "#e7e6e6"
+                }
+            ],
+            "icons": {
+                "icon": {
+                    "pos": [
+                        34,
+                        200
+                    ],
+                    "size": [
+                        28,
+                        28
+                    ],
+                    "rounded": true
+                },
+                "bell_icon": {
+                    "pos": [
+                        0,
+                        208
+                    ],
+                    "size": [
+                        14,
+                        14
+                    ],
+                    "path": "assets/icons/bell-icon.png",
+                    "relative_to_x": "now_text",
+                    "spacing": 6,
+                    "align_y_to": "now_text"
+                },
+                "arrow_down": {
+                    "pos": [
+                        400,
+                        205
+                    ],
+                    "size": [
+                        30,
+                        30
+                    ],
+                    "path": "assets/icons/keyboard-arrow-up.webp"
+                }
+            },
+            "banners": {
+                "banner": {
+                    "pos": [
+                        78,
+                        240
+                    ],
+                    "size": [
+                        356,
+                        250
+                    ],
+                    "radius": 6
+                }
+            },
+            "texts": {
+                "display_clock": {
+                    "pos": [
+                        36,
+                        100
+                    ],
+                    "font_size": 50,
+                    "color": "#FFFFFF",
+                    "bold": false
+                },
+                "display_date": {
+                    "pos": [
+                        165,
+                        135
+                    ],
+                    "font_size": 16,
+                    "color": "#DDDDDD"
+                },
+                "app_name": {
+                    "pos": [
+                        78,
+                        205
+                    ],
+                    "font_size": 14,
+                    "color": "#555555"
+                },
+                "now_text": {
+                    "pos": [
+                        0,
+                        207
+                    ],
+                    "font_size": 12,
+                    "color": "#666666",
+                    "content": "\u2022 now",
+                    "relative_to_x": "app_name",
+                    "spacing": 8
+                }
+            }
+        },
+        "5": {
+            "name": "Branding Focus",
+            "canvas_size": [
+                1080,
+                1080
+            ],
+            "background": "#FFFFFF",
+            "elements": {
+                "icon": {
+                    "pos": [
+                        440,
+                        200
+                    ],
+                    "size": [
+                        200,
+                        200
+                    ]
+                },
+                "app_name": {
+                    "pos": [
+                        0,
+                        450
+                    ],
+                    "font_size": 48,
+                    "color": "#1A73E8",
+                    "center": true
+                },
+                "title": {
+                    "pos": [
+                        0,
+                        600
+                    ],
+                    "font_size": 56,
+                    "color": "#202124",
+                    "center": true,
+                    "bold": true
+                },
+                "description": {
+                    "pos": [
+                        100,
+                        700
+                    ],
+                    "font_size": 34,
+                    "color": "#5F6368",
+                    "center": true,
+                    "max_width": 880
+                }
+            }
+        }
+    },
+    "defaults": {
+        "font_path": "assets/fonts/Arial.ttf",
+        "bold_font_path": "assets/fonts/Arial_Bold.ttf",
+        "fallback_font": "assets/fonts/DejaVuSans.ttf"
+    }
+}
