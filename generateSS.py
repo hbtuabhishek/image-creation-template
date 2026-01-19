@@ -1,7 +1,7 @@
 import os
 import json
 import sys
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 class ImageGenerator:
     def __init__(self, config_path):
@@ -161,9 +161,9 @@ class ImageGenerator:
             elif etype == 'banner':
                 path = data.get(f"{eid}_path", cfg.get('path'))
                 if path:
-                    w = cfg['size'][0]
-                    h = cfg['size'][1]
-                    layouts['banner'][eid] = {'pos': pos, 'path': path}
+                    # Use fixed dimensions from config for aspect-fill crop
+                    w, h = cfg['size']
+                    layouts['banner'][eid] = {'pos': pos, 'path': path, 'size': [w, h]}
             
             elif etype == 'text':
                 content = data.get(eid, cfg.get('content', ""))
@@ -258,7 +258,12 @@ class ImageGenerator:
                 cfg = template['banners'][bid]
                 if not layout['path']: continue
                 try:
-                    banner = Image.open(layout['path']).convert('RGBA').resize(tuple(cfg['size']), Image.Resampling.LANCZOS)
+                    # Use ImageOps.fit to crop and scale while preserving aspect ratio
+                    banner = ImageOps.fit(
+                        Image.open(layout['path']).convert('RGBA'),
+                        tuple(layout['size']),
+                        method=Image.Resampling.LANCZOS
+                    )
                     if cfg.get('radius', 0) > 0:
                         mask = Image.new('L', banner.size, 0)
                         mask_draw = ImageDraw.Draw(mask)

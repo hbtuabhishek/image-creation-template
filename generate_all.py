@@ -8,11 +8,11 @@ SCRIPT_NAME = "generateSS.py"
 
 # Common Data
 DATE_TIME = "Tue, Jan 15, 01:50"
-TITLE = "New Delhi World Book Fair 2026 - A Celebration of Literature, Culture, and History across the Ages"
-BASE_DESCRIPTION = "Bharat Mandampam | Jan 10-18 | Entry Free | Theme: valour & Wisdom"
+TITLE = "Infiltration changing West Bengal’s demography: PM"
+BASE_DESCRIPTION = "Prime Minister Narendra Modi on Sunday mounted an attack on the ruling Trinamool Congress Government in West Bengal with"
 APP_NAME = "iZooto Demo App"
 ICON_FILE = "assets/icons/bell-icon.png" 
-BANNER_FILE = "assets/banners/World-Book-Fair-2026-1536x1536-1.jpg"
+BANNER_FILE = "assets/banners/infiltration-changing-west-bengal---s-demography--pm-2026-01-19.jpg"
 
 def run_gen(tid, description_suffix=""):
     """
