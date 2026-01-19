@@ -8,7 +8,7 @@ SCRIPT_NAME = "generateSS.py"
 
 # Common Data
 DATE_TIME = "Tue, Jan 15, 01:50"
-TITLE = "New Delhi World Book Fair 2026"
+TITLE = "New Delhi World Book Fair 2026 - A Celebration of Literature, Culture, and History across the Ages"
 BASE_DESCRIPTION = "Bharat Mandampam | Jan 10-18 | Entry Free | Theme: valour & Wisdom"
 APP_NAME = "iZooto Demo App"
 ICON_FILE = "assets/icons/bell-icon.png" 
@@ -52,7 +52,7 @@ def run_gen(tid, description_suffix=""):
         print(f"❌ Execution Error: {e}")
 
 def main():
-    print("🚀 Starting Batch Generation for Templates 1-4...\n")
+    print("🚀 Starting Batch Generation for Templates...\n")
     
     if not os.path.exists(SCRIPT_NAME):
         print(f"Error: {SCRIPT_NAME} not found in current directory.")

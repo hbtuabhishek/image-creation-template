@@ -128,6 +128,7 @@
                     "font_size": 16,
                     "color": "#000000",
                     "bold": true,
+                    "max_width": 350,
                     "font_path": "assets/fonts/Arial.ttf"
                 },
                 "description": {
@@ -256,6 +257,7 @@
                     "font_size": 16,
                     "color": "#000000",
                     "bold": true,
+                    "max_width": 345,
                     "font_path": "assets/fonts/Arial.ttf"
                 },
                 "description": {
@@ -384,6 +386,7 @@
                     "font_size": 16,
                     "color": "#000000",
                     "bold": true,
+                    "max_width": 345,
                     "font_path": "assets/fonts/Arial.ttf"
                 },
                 "description": {
