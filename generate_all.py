@@ -11,11 +11,7 @@ DATE_TIME = "Tue, Jan 15, 01:50"
 TITLE = "New Delhi World Book Fair 2026"
 BASE_DESCRIPTION = "Bharat Mandampam | Jan 10-18 | Entry Free | Theme: valour & Wisdom"
 APP_NAME = "iZooto Demo App"
-
-# Assets
-# Note: Using the assets provided in the user's last command
 ICON_FILE = "assets/icons/bell-icon.png" 
-# Fallback to default if bell-icon doesn't exist? The user seemed to use it successfully for T1-T3.
 BANNER_FILE = "assets/banners/World-Book-Fair-2026-1536x1536-1.jpg"
 
 def run_gen(tid, description_suffix=""):
@@ -63,13 +59,10 @@ def main():
         return
 
     # Run for each template
-    run_gen(1, " @75")
-    run_gen(2, " @76")
-    run_gen(3, " @77")
-    
-    # Template 4 (User's command for T4 was failing due to missing args. 
-    # We pass empty strings or the same content. Passing same content is safer.)
-    run_gen(4, "")
+    run_gen(1)
+    run_gen(2)
+    run_gen(3)
+    run_gen(4)
     
     print("\n✨ All tasks completed.")
 

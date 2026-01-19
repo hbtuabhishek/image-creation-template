@@ -172,6 +172,18 @@ class ImageGenerator:
                     max_width = cfg.get('max_width', canvas_size[0] - pos[0] * 2)
                     lines = self.wrap_text(content, font, max_width)
                     
+                    # --- Truncate to max 2 lines with ellipsis ---
+                    if eid in ['title', 'description'] and len(lines) > 2:
+                        lines = lines[:2]
+                        last_line = lines[-1]
+                        while last_line:
+                            bbox = draw.textbbox((0, 0), last_line + "...", font=font)
+                            if (bbox[2] - bbox[0]) <= max_width:
+                                lines[-1] = last_line + "..."
+                                break
+                            last_line = last_line[:-1]
+                    # ---------------------------------------------
+                    
                     line_spacing = cfg.get('line_spacing', 10)
                     line_h = 0
                     max_line_w = 0

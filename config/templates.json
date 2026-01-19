@@ -74,7 +74,7 @@
                 "banner": {
                     "pos": [
                         78,
-                        282
+                        285
                     ],
                     "size": [
                         356,
@@ -265,7 +265,7 @@
                     ],
                     "font_size": 14,
                     "color": "#444444",
-                    "max_width": 380
+                    "max_width": 340
                 }
             }
         },
@@ -393,7 +393,7 @@
                     ],
                     "font_size": 14,
                     "color": "#444444",
-                    "max_width": 380
+                    "max_width": 340
                 }
             }
         },
